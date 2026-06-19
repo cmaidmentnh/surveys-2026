@@ -3,201 +3,125 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2026 Candidate Surveys | Win the House</title>
+<title>2026 Candidate Surveys | Committee to Elect House Republicans</title>
 <meta name="description" content="Recommended surveys and pledges for 2026 NH House Republican candidates.">
 <meta name="robots" content="index,follow">
 <meta property="og:title" content="2026 Candidate Surveys">
 <meta property="og:description" content="Surveys and pledges every 2026 NH House Republican candidate should complete.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://surveys.winthehouse.gop">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%B3%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="https://electhouserepublicans.com/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --accent: #b91c1c;
-    --accent-dark: #991b1b;
-    --navy: #0c1d3d;
-    --navy-light: #1a2d52;
-    --base: #f2f5f7;
-    --base-light: #f7f8f9;
-    --white: #ffffff;
-    --text: #121212;
-    --text-muted: #555;
-    --border: #e5e7eb;
+  @font-face{font-family:'Norwester';src:url('https://electhouserepublicans.com/fonts/norwester.otf') format('opentype');font-display:swap;}
+  :root{
+    --red:#b91c1c;--red-dark:#991b1b;--red-light:#dc2626;--navy:#0c1d3d;--navy-light:#152a52;
+    --gold:#d4a03c;--white:#fff;--off-white:#f8f9fb;--gray-100:#f3f4f6;--gray-200:#e5e7eb;
+    --gray-500:#6b7280;--gray-700:#374151;--gray-900:#111827;--max:1200px;
+    --clip:polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
   }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    font-size: 17px;
-    line-height: 1.6;
-    color: var(--text);
-    background: var(--base);
-    -webkit-font-smoothing: antialiased;
-  }
-  .hero {
-    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
-    color: var(--white);
-    padding: 80px 24px 60px;
-    text-align: center;
-    border-bottom: 6px solid var(--accent);
-  }
-  .hero-inner { max-width: 820px; margin: 0 auto; }
-  .eyebrow {
-    display: inline-block;
-    background: var(--accent);
-    color: var(--white);
-    padding: 6px 14px;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 20px;
-    border-radius: 2px;
-  }
-  h1 {
-    font-size: clamp(28px, 5vw, 44px);
-    font-weight: 800;
-    text-transform: uppercase;
-    line-height: 1.15;
-    margin-bottom: 18px;
-    letter-spacing: -0.5px;
-  }
-  .hero p {
-    font-size: clamp(16px, 2.2vw, 19px);
-    opacity: 0.92;
-    max-width: 640px;
-    margin: 0 auto;
-  }
-  main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 60px 24px 80px;
-  }
-  .section-title {
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: var(--accent);
-    margin-bottom: 10px;
-  }
-  .section-heading {
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--navy);
-    margin-bottom: 8px;
-  }
-  .section-sub {
-    color: var(--text-muted);
-    margin-bottom: 32px;
-    max-width: 640px;
-  }
-  .survey-grid {
-    display: grid;
-    gap: 20px;
-  }
-  .survey-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-left: 5px solid var(--accent);
-    border-radius: 8px;
-    padding: 24px 28px;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
-  .survey-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(12, 29, 61, 0.1);
-  }
-  .survey-card.pledge {
-    border-left-color: var(--navy);
-  }
-  .survey-card.upcoming {
-    border-left-color: #cbd5e1;
-    opacity: 0.75;
-  }
-  .card-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
-  }
-  .org-name {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--navy);
-  }
-  .badge {
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 4px 10px;
-    border-radius: 3px;
-  }
-  .badge-survey { background: #fef2f2; color: var(--accent); }
-  .badge-pledge { background: #eff4ff; color: var(--navy); }
-  .badge-soon { background: #f1f5f9; color: #64748b; }
-  .survey-card p {
-    color: var(--text-muted);
-    font-size: 15.5px;
-  }
-  .btn-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 4px;
-  }
-  .btn {
-    display: inline-block;
-    padding: 11px 22px;
-    background: var(--accent);
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    border-radius: 4px;
-    transition: background 0.15s ease;
-  }
-  .btn:hover { background: var(--accent-dark); }
-  .btn-navy { background: var(--navy); }
-  .btn-navy:hover { background: var(--navy-light); }
-  .section + .section { margin-top: 56px; }
-  footer {
-    background: var(--navy);
-    color: var(--white);
-    text-align: center;
-    padding: 32px 24px;
-    font-size: 14px;
-  }
-  footer a { color: var(--white); text-decoration: underline; }
-  footer .footer-links { margin-top: 10px; opacity: 0.85; }
-  footer .small { display: block; margin-top: 12px; opacity: 0.65; font-size: 12px; }
-  @media (max-width: 560px) {
-    .hero { padding: 60px 20px 48px; }
-    main { padding: 44px 20px 60px; }
-    .survey-card { padding: 20px; }
-    .org-name { font-size: 18px; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Barlow',sans-serif;color:var(--gray-700);background:var(--off-white);line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3{font-family:'Norwester',sans-serif;font-weight:normal;text-transform:uppercase;line-height:1.1;color:var(--gray-900);letter-spacing:.5px}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 2rem}
+  .btn{display:inline-block;font-family:'Norwester',sans-serif;text-transform:uppercase;letter-spacing:2px;font-size:.82rem;padding:.85rem 1.7rem;cursor:pointer;border:none;clip-path:var(--clip);transition:all .25s;text-align:center;white-space:nowrap;background:var(--red);color:#fff}
+  .btn:hover{background:var(--red-dark);letter-spacing:3px}
+  .btn--navy{background:var(--navy);color:#fff}.btn--navy:hover{background:var(--navy-light)}
+
+  /* Header */
+  header.header{position:sticky;top:0;z-index:1000;background:var(--navy);height:80px;display:flex;align-items:center;box-shadow:0 2px 20px rgba(0,0,0,.15)}
+  .header__inner{display:flex;align-items:center;justify-content:space-between;max-width:var(--max);width:100%;margin:0 auto;padding:0 2rem;gap:1rem}
+  .header__logo img{height:46px;width:auto;display:block}
+  .header__nav{display:flex;align-items:center;flex-wrap:wrap}
+  .header__nav a{padding:.5rem 1.05rem;font-size:.78rem;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,.85);transition:color .2s;border-bottom:2px solid transparent}
+  .header__nav a:hover{color:#fff}
+  .header__donate{margin-left:1rem;padding:.62rem 1.5rem;font-size:.8rem;color:#fff;border-bottom:none}
+  .header__donate:hover{color:#fff}
+
+  /* Hero */
+  .hero{position:relative;background:linear-gradient(135deg,var(--navy) 0%,#0a1628 100%);color:#fff;padding:5rem 0 5.5rem;overflow:hidden;border-bottom:6px solid var(--red)}
+  .hero__bg{position:absolute;inset:0;background:url('https://electhouserepublicans.com/images/hero-statehouse.jpg') center/cover;opacity:.22}
+  .hero__glow{position:absolute;inset:0;background:radial-gradient(ellipse at 20% 45%,rgba(185,28,28,.20) 0%,transparent 55%)}
+  .hero .wrap{position:relative;z-index:2;max-width:860px;text-align:center;margin:0 auto}
+  .hero__pre{display:inline-block;font-family:'Norwester',sans-serif;letter-spacing:6px;text-transform:uppercase;color:var(--gold);font-size:.95rem;margin-bottom:1rem}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.4rem);color:#fff;margin-bottom:1.1rem}
+  .hero h1 .hl{color:var(--red-light)}
+  .hero p{font-size:1.12rem;color:rgba(255,255,255,.78);max-width:640px;margin:0 auto}
+
+  /* Sections */
+  main{max-width:1080px;margin:0 auto;padding:64px 2rem 80px}
+  .section + .section{margin-top:64px}
+  .section__pre{display:inline-block;font-family:'Norwester',sans-serif;text-transform:uppercase;letter-spacing:3px;color:var(--red);font-size:.8rem;margin-bottom:.4rem}
+  .section-heading{font-size:2.1rem;color:var(--navy);padding-bottom:10px;border-bottom:3px solid var(--gold);margin-bottom:14px;display:inline-block}
+  .section-sub{color:var(--gray-500);margin-bottom:34px;max-width:680px;font-size:1.02rem}
+
+  /* Cards */
+  .survey-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:24px}
+  .survey-card{background:#fff;border:1px solid var(--gray-200);border-top:4px solid var(--red);clip-path:var(--clip);padding:26px 28px 28px;display:flex;flex-direction:column;gap:14px;transition:transform .15s,box-shadow .15s}
+  .survey-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(12,29,61,.14)}
+  .survey-card.pledge{border-top-color:var(--navy)}
+  .survey-card.upcoming{border-top-color:var(--gray-200);opacity:.78}
+  .card-header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px}
+  .org-name{font-family:'Norwester',sans-serif;text-transform:uppercase;letter-spacing:.5px;font-size:1.25rem;color:var(--navy);line-height:1.15}
+  .badge{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:4px 10px;border-radius:3px;font-family:'Barlow',sans-serif;flex-shrink:0}
+  .badge-survey{background:#fdeaea;color:var(--red)}
+  .badge-pledge{background:#eef2fb;color:var(--navy)}
+  .badge-soon{background:var(--gray-100);color:var(--gray-500)}
+  .survey-card p{color:var(--gray-700);font-size:.97rem;flex:1}
+  .btn-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:2px}
+
+  /* Tips */
+  .tips{list-style:none;display:grid;gap:14px;padding-left:0}
+  .tips li{background:#fff;padding:18px 22px;clip-path:var(--clip);border-left:4px solid var(--gold);font-size:1rem}
+  .tips strong{color:var(--navy)}
+
+  /* Footer */
+  footer{background:var(--navy);color:rgba(255,255,255,.62);text-align:center;padding:34px 2rem;font-size:.85rem}
+  footer a{color:rgba(255,255,255,.85);text-decoration:underline}
+  footer .footer-links{margin-top:10px}
+  footer .small{display:block;margin-top:12px;opacity:.6;font-size:.78rem}
+
+  @media(max-width:640px){
+    .header__nav{display:none}
+    .hero{padding:3.5rem 0 4rem}
+    main{padding:44px 1.25rem 60px}
+    .survey-grid{grid-template-columns:1fr}
   }
 </style>
 </head>
 <body>
 
-<header class="hero">
-  <div class="hero-inner">
-    <span class="eyebrow">2026 Candidates</span>
-    <h1>Surveys &amp; Pledges Every NH Republican Candidate Should Complete</h1>
-    <p>Conservative organizations across New Hampshire use these surveys to endorse, rate, and support candidates. Filling them out accurately and on time is one of the simplest, highest-leverage things you can do as a candidate.</p>
+<header class="header">
+  <div class="header__inner">
+    <a class="header__logo" href="https://electhouserepublicans.com"><img src="https://electhouserepublicans.com/images/logo.png" alt="Committee to Elect House Republicans"></a>
+    <nav class="header__nav">
+      <a href="https://electhouserepublicans.com/index.html">Home</a>
+      <a href="https://electhouserepublicans.com/leadership.html">Leadership</a>
+      <a href="https://electhouserepublicans.com/contract.html">Contract with NH</a>
+      <a href="https://electhouserepublicans.com/contact.html">Contact</a>
+      <a href="https://actioncenter.winthehouse.gop/" target="_blank" rel="noopener">Action Center</a>
+      <a href="https://swag.winthehouse.gop/" target="_blank" rel="noopener">Shop</a>
+      <a class="header__donate btn" href="https://electhouserepublicans.com/donate.html">Donate</a>
+    </nav>
   </div>
 </header>
 
+<section class="hero">
+  <div class="hero__bg"></div><div class="hero__glow"></div>
+  <div class="wrap">
+    <span class="hero__pre">2026 Candidates</span>
+    <h1>Surveys &amp; Pledges Every <span class="hl">Republican</span> Candidate Should Complete</h1>
+    <p>Conservative organizations across New Hampshire use these surveys to endorse, rate, and support candidates. Filling them out accurately and on time is one of the simplest, highest-leverage things you can do as a candidate.</p>
+  </div>
+</section>
+
 <main>
   <section class="section">
-    <div class="section-title">Recommended</div>
-    <h2 class="section-heading">Complete these now</h2>
+    <div class="section__pre">Recommended</div><br>
+    <h2 class="section-heading">Complete These Now</h2>
     <p class="section-sub">These organizations are actively collecting surveys and pledges for the 2026 cycle. Most take 15&ndash;30 minutes.</p>
 
     <div class="survey-grid">
@@ -210,6 +134,17 @@
         <p>AFP-NH&rsquo;s candidate survey covers economic freedom, education, and regulatory policy. AFP activates grassroots volunteers for aligned candidates.</p>
         <div class="btn-row">
           <a class="btn" href="https://forms.office.com/r/pZM90EkGQr" target="_blank" rel="noopener">Take AFP-NH Survey &rarr;</a>
+        </div>
+      </article>
+
+      <article class="survey-card pledge">
+        <div class="card-header">
+          <div class="org-name">Americans for Tax Reform</div>
+          <span class="badge badge-pledge">Pledge</span>
+        </div>
+        <p>ATR&rsquo;s Taxpayer Protection Pledge is a written commitment to your constituents to oppose any and all tax increases. Signing it is a powerful signal to fiscally conservative voters and donors.</p>
+        <div class="btn-row">
+          <a class="btn btn--navy" href="https://atr.org/take-the-pledge/" target="_blank" rel="noopener">Take the No-Tax Pledge &rarr;</a>
         </div>
       </article>
 
@@ -231,7 +166,7 @@
         </div>
         <p>A short public pledge on core CANH principles. Signing the pledge is separate from and in addition to the legislative survey above.</p>
         <div class="btn-row">
-          <a class="btn btn-navy" href="https://www.citizensalliancenh.org/sign-pledge/" target="_blank" rel="noopener">Sign CANH Pledge &rarr;</a>
+          <a class="btn btn--navy" href="https://www.citizensalliancenh.org/sign-pledge/" target="_blank" rel="noopener">Sign CANH Pledge &rarr;</a>
         </div>
       </article>
 
@@ -272,8 +207,8 @@
   </section>
 
   <section class="section">
-    <div class="section-title">Coming Soon</div>
-    <h2 class="section-heading">More surveys being added</h2>
+    <div class="section__pre">Coming Soon</div><br>
+    <h2 class="section-heading">More Surveys Being Added</h2>
     <p class="section-sub">We&rsquo;ll post direct links here as these organizations publish their 2026 surveys. Check back regularly.</p>
 
     <div class="survey-grid">
@@ -306,13 +241,13 @@
   </section>
 
   <section class="section">
-    <div class="section-title">Tips</div>
-    <h2 class="section-heading">Before you submit</h2>
-    <p class="section-sub" style="margin-bottom:16px;">A few things that will save you headaches later:</p>
-    <ul style="list-style: none; display: grid; gap: 12px; padding-left: 0;">
-      <li style="background: var(--white); padding: 16px 20px; border-radius: 6px; border-left: 4px solid var(--accent);"><strong>Keep copies of every response.</strong> Save screenshots or a text file. Your answers can come up in interviews, debates, and opponent mailers.</li>
-      <li style="background: var(--white); padding: 16px 20px; border-radius: 6px; border-left: 4px solid var(--accent);"><strong>Be consistent across surveys.</strong> Organizations share data and compare answers. Contradictions get noticed fast.</li>
-      <li style="background: var(--white); padding: 16px 20px; border-radius: 6px; border-left: 4px solid var(--accent);"><strong>Submit early.</strong> Endorsement and ratings decisions are made on a schedule. Late submissions often don&rsquo;t get counted.</li>
+    <div class="section__pre">Tips</div><br>
+    <h2 class="section-heading">Before You Submit</h2>
+    <p class="section-sub" style="margin-bottom:18px;">A few things that will save you headaches later:</p>
+    <ul class="tips">
+      <li><strong>Keep copies of every response.</strong> Save screenshots or a text file. Your answers can come up in interviews, debates, and opponent mailers.</li>
+      <li><strong>Be consistent across surveys.</strong> Organizations share data and compare answers. Contradictions get noticed fast.</li>
+      <li><strong>Submit early.</strong> Endorsement and ratings decisions are made on a schedule. Late submissions often don&rsquo;t get counted.</li>
     </ul>
   </section>
 </main>
